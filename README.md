@@ -27,12 +27,26 @@ A machine learning project that demonstrates **Apache Spark MLlib Linear Regress
 
 ### Installation
 
-1. **Navigate to project:**
+1. **Clone and navigate to project:**
    ```bash
-   cd c:\Users\bhakt\energy-forecast
+   git clone https://github.com/bhaktiichandak/energy-consumption-forecasting-spark.git
+   cd energy-consumption-forecasting-spark
    ```
 
-2. **Install dependencies:**
+2. **Download the dataset:**
+   ```bash
+   # Create data directory
+   mkdir -p data
+   
+   # Download from UCI repository
+   curl -o data/energy.csv.zip "https://archive.ics.uci.edu/ml/machine-learning-databases/00235/household_power_consumption.zip"
+   
+   # Extract the dataset
+   unzip data/energy.csv.zip -d data/
+   mv data/household_power_consumption.txt data/energy.csv
+   ```
+
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
