@@ -71,10 +71,30 @@ Model parameters saved to spark_model/model_params.json
 
 #### Step 2: Run the Streamlit UI
 ```bash
-streamlit run ui/app.py
+streamlit run app.py
 ```
 
-UI opens at `http://localhost:8502` (or similar).
+UI opens at `http://localhost:8501` (or similar).
+
+### 🌐 Deploy to Streamlit Community Cloud
+
+1. **Make Repository Public** (if not already):
+   - Go to your GitHub repository
+   - Settings → General → Danger Zone → Change repository visibility
+   - Set to **Public**
+
+2. **Deploy on Streamlit Cloud**:
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Connect your GitHub account
+   - Select repository: `bhaktiichandak/energy-consumption-forecasting-spark`
+   - Main file path: `app.py`
+   - Click **Deploy**
+
+3. **Alternative: Deploy from Local**:
+   - The repository is now configured for Streamlit Cloud
+   - `app.py` is in the root directory
+   - `requirements.txt` and `packages.txt` are ready
+   - Repository is connected to GitHub
 
 ## 📊 Data Description
 
