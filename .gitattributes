@@ -1,0 +1,2 @@
+data/energy.csv.zip !text !filter !merge !diff
+data/energy.csv filter=lfs diff=lfs merge=lfs -text

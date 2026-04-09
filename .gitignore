@@ -1,0 +1,26 @@
+# Dataset files (too large for GitHub)
+data/*.csv
+data/*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Spark temporary files
+spark-warehouse/
+metastore_db/
+
+# Model files (can be regenerated)
+spark_model/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
